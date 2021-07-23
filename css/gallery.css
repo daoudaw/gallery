@@ -1,0 +1,31 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+}
+
+.gallery
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery img
+{
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery img:hover
+{
+    filter: sepia(70%);
+}
